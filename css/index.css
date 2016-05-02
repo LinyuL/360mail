@@ -217,9 +217,9 @@ body{
 	margin: 5px 5px 0;
 	color:#555;
 	font-size: 13px;
-	height:14px;
+	height:13px;
 	overflow: hidden;
-	line-height: 14px;
+	line-height: 13px;
 }
 .buy-list a .buy-price{
 	display: block;
@@ -290,7 +290,7 @@ body{
 	margin-left: 5px;
 	font-size: 13px;
 	height:17px;
-	line-height: 18px;
+	line-height: 17px;
 	color:#222;
 	font-style: normal;
 }
