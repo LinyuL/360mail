@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>360商城</title>
+	<link rel="stylesheet" href="./css/swiper.min.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./css/iconfont.css">
 	<script src="./js/jquerymin.js"></script>
@@ -11,7 +12,43 @@
 </head>
 <body>
 <!-- 头部 -->
-<div class="box">
+<div class="swiper-container">
+        <div class="swiper-wrapper inner">
+            <div class="swiper-slide">
+				<a href="javascript:;">
+					<img src="./images/ban1.png" alt="">
+				</a>
+            </div>
+            <div class="swiper-slide">
+				<a href="javascript:;">
+					<img src="./images/ban2.jpg" alt="">
+				</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="javascript:;">
+					<img src="./images/ban3.jpg" alt="">
+				</a>
+            </div>
+            <div class="swiper-slide">
+				<a href="javascript:;">
+					<img src="./images/ban4.jpg" alt="">
+				</a>
+            </div>
+            <div class="swiper-slide">
+            	<a href="javascript:;">
+					<img src="./images/ban5.jpg" alt="">
+				</a>
+            </div>
+            <div class="swiper-slide">
+				<a href="javascript:;">
+					<img src="./images/ban6.png" alt="">
+				</a>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination hot"></div>
+    </div>
+<!-- <div class="box">
 	<ul class="inner">
 		<li>
 			<a href="javascript:;">
@@ -52,7 +89,7 @@
 		<li></li>
 		<li></li>
 	</ul>
-</div>
+</div> -->
 
 <!-- 其它5个 -->
 <div class="f-box">
@@ -919,8 +956,23 @@
 
 
 </body>
+<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
 <script>	
-	var isTouch="ontouchstart" in window;
+	/*var isTouch="ontouchstart" in window;
 	if(isTouch){
 		var mousedown="touchstart";
 		var mousemove="touchmove";
@@ -987,6 +1039,6 @@
 		inner.addEventListener(mousemove,moveS);
 		inner.addEventListener(mouseup,upS);
 		
-	})
+	})*/
 </script>
 </html>

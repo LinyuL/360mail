@@ -16,7 +16,22 @@ a{
 body{
 	background: #F4F4F4;
 }
-.box{
+.inner{
+	width: 600%;
+	height: 100%;
+	overflow: hidden;
+}
+.inner a{
+	display: block;
+}
+.inner a img{
+	width:100%;
+	height:100%;
+} 
+.hot span{
+	background: #fff;
+}
+/* .box{
 	width:100%;
 	height:auto;
 	position: relative;
@@ -39,9 +54,9 @@ body{
 .inner li img{
 	width:100%;
 	height:100%;
-}
+} */
 /*小按钮*/
-.btn{
+/* .btn{
 	margin-left:-33px;
 	height:10px;
 	position: absolute;
@@ -58,7 +73,12 @@ body{
 }
 .btn .hot{
 	background: #fff;
-}
+} */
+
+/*banner栏目*/
+
+
+
 
 /*其它5个*/
 .f-box{
@@ -217,9 +237,9 @@ body{
 	margin: 5px 5px 0;
 	color:#555;
 	font-size: 13px;
-	height:13px;
+	height:14px;
 	overflow: hidden;
-	line-height: 13px;
+	line-height: 14px;
 }
 .buy-list a .buy-price{
 	display: block;
@@ -290,7 +310,7 @@ body{
 	margin-left: 5px;
 	font-size: 13px;
 	height:17px;
-	line-height: 17px;
+	line-height: 18px;
 	color:#222;
 	font-style: normal;
 }
