@@ -47,49 +47,7 @@
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination hot"></div>
-    </div>
-<!-- <div class="box">
-	<ul class="inner">
-		<li>
-			<a href="javascript:;">
-				<img src="./images/ban1.png" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="javascript:;">
-				<img src="./images/ban2.jpg" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="javascript:;">
-				<img src="./images/ban3.jpg" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="javascript:;">
-				<img src="./images/ban4.jpg" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="javascript:;">
-				<img src="./images/ban5.jpg" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="javascript:;">
-				<img src="./images/ban6.png" alt="">
-			</a>
-		</li>
-	</ul>
-	<ul class="btn">
-		<li class="hot"></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-</div> -->
+</div>
 
 <!-- 其它5个 -->
 <div class="f-box">
@@ -971,74 +929,4 @@
         autoplayDisableOnInteraction: false
     });
     </script>
-<script>	
-	/*var isTouch="ontouchstart" in window;
-	if(isTouch){
-		var mousedown="touchstart";
-		var mousemove="touchmove";
-		var mouseup="touchend";
-	}else{
-		var mousedown="mousedown";
-		var mousemove="mousemove";
-		var mouseup="mouseup";
-	}
-
-	var box=document.querySelector(".box");
-	var inner=document.querySelector(".inner");
-	var lis=inner.querySelectorAll("li");
-	var iw=box.offsetWidth;
-	var i=0;
-	var movex=0;  //走到哪
-	inner.addEventListener(mousedown,function(e){
-		e.preventDefault();
-		var stime=e.timeStamp;		
-		var e=isTouch?e.changedTouches[0]:e;
-		var dx=e.clientX;
-		var lengX;
-		var mx;
-		var dir;
-		inner.style.transition="none";
-		function moveS(e){
-			var e=isTouch?e.changedTouches[0]:e;
-			mx=e.clientX;
-			lengX=mx-dx;
-			// dir=lengX>0?"right":"left";
-			inner.style.webkitTransform="translate3d("+(movex+lengX)+"px,0,0)";
-		}
-		function upS(e){
-			var etime=e.timeStamp;
-			var lenT=etime-stime;
-			if(lengX<0){
-				movexy(1);
-			}
-			else{
-				movexy(-1);
-			}
-			function movexy(a){
-				if(Math.abs(lengX)>iw/2||(lenT<100&&Math.abs(lengX)>30)){
-					i+=a;
-					if(i<0){
-						i=0;
-					}
-					else if(i>lis.length-1){
-						i=lis.length-1;
-					}
-					movex=-i*iw;
-					inner.style.transition="transform .3s";
-					inner.style.webkitTransform="translate3d("+movex+"px,0,0)";
-				}
-				else{
-					movex=-i*iw;
-					inner.style.transition="transform .3s";
-					inner.style.webkitTransform="translate3d("+movex+"px,0,0)";
-				}
-			}
-			inner.removeEventListener(mousemove,moveS);
-			inner.removeEventListener(mouseup,upS);
-		}
-		inner.addEventListener(mousemove,moveS);
-		inner.addEventListener(mouseup,upS);
-		
-	})*/
-</script>
 </html>
